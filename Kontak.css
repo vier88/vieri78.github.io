@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .Navi {
+  position: relative;
+  display: flex;
+}
+
+header .Navi li {
+  list-style: none;
+}
+
+header .Navi li a {
+  display: inline-block;
+  color: black;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 2px 15px;
+}
+
+header .Navi li a:hover {
+  background: blue;
+  color: white;
+}
+
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.contact .pembuka {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact .pembuka h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: black;
+}
+
+.contact .pembuka p {
+
+  font-weight: 300;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+}
+
+.container .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.container .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+  background: #fff;
+}
+
+.container .contactInfo .box .kalimat {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.container .contactInfo .box .kalimat h2 {
+  font-weight: 500;
+  color: blue;
+}
+
+.contactform {
+  width: 40%;
+  padding: 40px;
+  border-radius: 5%;
+  box-shadow: 0px 5px 10px black;
+}
+
+.contactform h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.contactform .Inputbox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactform .Inputbox input,
+.contactform .Inputbox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contactform .Inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactform .Inputbox input:focus ~ span,
+.contactform .Inputbox input:valid ~ span,
+.contactform .Inputbox textarea:focus ~ span,
+.contactform .Inputbox textarea:valid ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactform .Inputbox input[type="submit"] {
+  width: 100px;
+  background: yellow;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+.footer-distributed {
+  background: #2d2a30;
+  box-sizing: border-box;
+  widows: 100%;
+  text-align: left;
+  font: bold 16px 'Poppins',sans-serif;
+  padding: 20px 20px 30px 20px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color: #33383b;
+  color: #ffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media (max-width:991px){
+
+  header {
+    padding: 20px;
+  }
+
+  header .Navi {
+    display: none;
+  }
+
+  header .Navi.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e51e2a;
+    display: flex;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .toggle{
+    position: relative;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background:url(menu.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1000;
+  }
+
+  .toggle.active{
+    position: fixed;
+    left: 40px;
+    background:url(close.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+
+
+  .contact {
+    padding: 50px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container .contactInfo {
+    margin-bottom: 40px;
+  }
+  .container .contactInfo,
+  .contactform {
+    width: 100%;
+  }
+
+  footer {
+    position: static;
+    display: flex;
+  }
+
+  .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+
+  .footer-distributed .footer-left img {
+    width: 150px;
+    height: 150px;
+  }
+
+}

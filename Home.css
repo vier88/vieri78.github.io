@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .Navi {
+  position: relative;
+  display: flex;
+}
+
+header .Navi li {
+  list-style: none;
+}
+
+header .Navi li a {
+  display: inline-block;
+  color: black;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 2px 15px;
+}
+
+header .Navi li a:hover {
+  background: blue;
+  color: white;
+}
+
+.pembukaan {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pembukaan .tulisan {
+  position: relative;
+  max-width: 600px;
+}
+
+.pembukaan .tulisan h2{
+  color: #333;
+  font-size: 2.2em;
+  line-height: 1.8em;
+  font-weight: 600;
+}
+
+.pembukaan .tulisan h2 span{
+  color: blue;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.pembukaan .tulisan p {
+  color:#333;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: justify;
+
+}
+
+.pembukaan .tulisan a{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 20px;
+  background: blue;
+  color: #fff;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.pembukaan .gambar1 {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+
+.pembukaan .gambar1 img{
+  max-width: 340px;
+}
+
+.circle {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #37306b;
+  clip-path: circle(600px at right);
+}
+
+.proval {
+  padding: 15px 9%;
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.proval h3 {
+  align-items: center;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.proval h3 span {
+  color: blue;
+}
+
+.proval .baganproval {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+  gap:15px;
+}
+
+.proval .baganproval .baganprov {
+  text-align: left;
+  padding: 30px 20px;
+  box-shadow: 0px 5px 10px #3337;
+  border-radius: 5px;
+}
+
+.proval .baganproval .baganprov i {
+  font-size: 2em;
+  color: blue;
+}
+
+.proval .baganproval .baganprov h4 {
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+.proval .baganproval .baganprov p {
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+.proval .baganproval .baganprov span {
+  font-weight: 600;
+}
+
+.Ourserv {
+  padding: 15px 9%;
+  padding-bottom: 100px;
+}
+
+.Ourserv h5 {
+  align-items: center;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.Ourserv h5 span {
+  color: blue;
+}
+
+.Ourserv .baganourserv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap:15px;
+
+
+}
+
+.Ourserv .baganourserv .baganourser {
+  box-shadow: 0px 5px 10px #3337;
+  border-radius: 5px;
+  background: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 15px;
+
+}
+
+.Ourserv .baganourserv .baganourser i {
+  font-size: 4em;
+  color: blue;
+}
+
+.Ourserv .baganourserv .baganourser h4 {
+  font-size: 1.8em;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.Ourserv .baganourserv .baganourser p {
+  font-size: 1em;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.Project {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+}
+
+.Project h6 {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  position: absolute;
+  width: 80vw;
+  max-width: 41em;
+  min-height: 25em;
+  border-radius: 0.6em;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 40%;
+  box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
+  display: flex;
+}
+.testimonial-container {
+  width: 85%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  padding: 1.8em 1.2em;
+}
+.wrapper button {
+  font-size: 1.8em;
+  height: 2.2em;
+  width: 2.2em;
+  background-color: #ffffff;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border: none;
+  color: #0a69ed;
+  box-shadow: 0 0 1em rgba(1, 17, 39, 0.25);
+  cursor: pointer;
+  border-radius: 50%;
+}
+button#next {
+  right: -1.1em;
+}
+button#prev {
+  left: -1.1em;
+}
+.testimonial-container p {
+  color: #8c8c90;
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 2em;
+  letter-spacing: 0.05em;
+}
+.testimonial-container img {
+  display: block;
+  margin: 1.8em auto 1.25em auto;
+
+  width: 4.4em;
+}
+.testimonial-container h3 {
+  color: #2d3d67;
+  font-size: 1em;
+  text-align: center;
+}
+.testimonial-container h6 {
+  color: #bcc4da;
+  font-size: 0.9em;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  text-align: center;
+}
+@media screen and (max-width: 650px) {
+  .wrapper {
+    font-size: 14px;
+  }
+}
+
+@media (max-width:991px){
+
+  .container  {
+    max-width: 100%;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  header .Navi {
+    display: none;
+  }
+
+  header .Navi.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e51e2a;
+    display: flex;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section {
+    padding: 20px 20px 120px;
+  }
+
+  .pembukaan {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .pembukaan .tulisan {
+    max-width: 100%;
+  }
+
+  .pembukaan .tulisan h2{
+    font-size: 2.5em;
+    margin-bottom: 15px;
+  }
+
+  .pembukaan .gambar1 {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .pembukaan .gambar1 img {
+    max-width: 250px;
+  }
+
+  .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #37306b;
+    clip-path: circle(400px at bottom);
+  }
+
+  .proval .baganproval .baganprov {
+    text-align: left;
+    box-shadow: 0px 5px 10px #3337;
+    border-radius: 5px;
+    width: 400px;
+    margin-left: 5px;
+    padding: 20px;
+  }
+
+  .toggle{
+    position: relative;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background:url(menu.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1000;
+  }
+
+  .toggle.active{
+    position: fixed;
+    left: 40px;
+    background:url(close.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+
+
+  footer {
+    position: fixed;
+  }
+
+  .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-left img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+.footer-distributed {
+  background: #2d2a30;
+  box-sizing: border-box;
+  widows: 100%;
+  text-align: left;
+  font: bold 16px 'Poppins',sans-serif;
+  padding: 20px 20px 30px 20px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color: #33383b;
+  color: #ffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krida</title>
+  <link rel="stylesheet" href="Kontak.css">
+  <script src="https://kit.fontawesome.com/457033bed9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section>
+    <header>
+      <ul class="Navi">
+        <li><a href="Home.HTML">Home</a></li>
+        <li><a href="Profile.HTML">Profile</a></li>
+        <li><a href="Portofolio.HTML">Portofolio</a></li>
+        <li><a href="Services.HTML">Services</a></li>
+        <li><a href="Partner.HTML">Partner</a></li>
+        <li><a href="Kontak.HTML">Kontak</a></li>
+      </ul>
+      <div class="toggle" onclick="toggleMenu()"></div>
+    </header>
+    <section class="contact">
+
+      <div class="pembuka">
+        <h1>Contact Us</h1>
+        <p>Bila ada yang ingin ditanyakan, jangan ragu untuk bertanya kepada kami</p>
+      </div>
+      <div class="container">
+        <div class="contactInfo">
+          <div class="box">
+            <div class = "icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="kalimat">
+              <h2>Alamat</h2>
+              <p>Bojong gede, buaran</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class = "icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="kalimat">
+              <h2>Telepon</h2>
+              <p>22222222222</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class = "icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="kalimat">
+              <h2>Email</h2>
+              <p>Adrian@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contactform">
+          <form>
+            <h3>Send Message</h3>
+            <div class="Inputbox">
+              <input type="text" name="" required="required">
+              <span>Full Name</span>
+            </div>
+            <div class="Inputbox">
+              <input type="text" name="" required="required">
+              <span>Email</span>
+            </div>
+            <div class="Inputbox">
+              <textarea required="required"></textarea>
+              <span>Type Your Message</span>
+            </div>
+            <div class="Inputbox">
+              <input type="submit" name="" value="Send">
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+  </section>
+  <script type="text/javascript">
+  function toggleMenu(){
+    const menuToggle = document.querySelector('.toggle');
+    const navigation = document.querySelector('.Navi')
+    menuToggle.classList.toggle('active')
+    navigation.classList.toggle('active')
+  }
+
+  </script>
+
+  <footer class="footer-distributed">
+    <div class="footer-left">
+      <img src="krida.PNG" height="200" width="200" alt="">
+    </div>
+
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>Dolores</span>
+        Bekasi</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>09289741924</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p>Adrian@gmail.com</p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>About the Company</span>
+        <strong>PT. Krida Indotama Teknologi</strong> adalah sebuah perusahaan software house yang menyediakan sistem digital yang komprehensif berbasis website dan aplikasi sesuai dengan kebutuhan client untuk dapat mempermudah dan memoderniasi pekerjaan.
+      </p>
+
+    </div>
+  </footer>
+
+
+</body>
+</html>
