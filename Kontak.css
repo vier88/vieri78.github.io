@@ -180,7 +180,7 @@ header .Navi li a:hover {
 
 .contactform .Inputlox input[type="submit"] {
   width: 100px;
-  background: yellow;
+  background: green;
   color: #fff;
   border: none;
   cursor: pointer;
