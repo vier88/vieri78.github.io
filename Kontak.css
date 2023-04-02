@@ -13,11 +13,10 @@ section {
   width: 100%;
   min-height: 100vh;
   padding: 100px;
-  padding-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  background: #fff;
 }
 
 header {
@@ -25,7 +24,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 80px;
+  padding: 20px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,13 +98,13 @@ header .Navi li a:hover {
   flex-direction: column;
 }
 
-.container .contactInfo .box {
+.container .contactInfo .lox {
   position: relative;
   padding: 20px 0;
   display: flex;
 }
 
-.container .contactInfo .box .icon {
+.container .contactInfo .lox .icon {
   min-width: 60px;
   height: 60px;
   display: flex;
@@ -116,7 +115,7 @@ header .Navi li a:hover {
   background: #fff;
 }
 
-.container .contactInfo .box .kalimat {
+.container .contactInfo .lox .kalimat {
   display: flex;
   margin-left: 20px;
   font-size: 16px;
@@ -124,7 +123,7 @@ header .Navi li a:hover {
   font-weight: 300;
 }
 
-.container .contactInfo .box .kalimat h2 {
+.container .contactInfo .lox .kalimat h2 {
   font-weight: 500;
   color: blue;
 }
@@ -141,14 +140,14 @@ header .Navi li a:hover {
   font-weight: 500;
 }
 
-.contactform .Inputbox {
+.contactform .Inputlox {
   position: relative;
   width: 100%;
   margin-top: 10px;
 }
 
-.contactform .Inputbox input,
-.contactform .Inputbox textarea {
+.contactform .Inputlox input,
+.contactform .Inputlox textarea {
   width: 100%;
   padding: 5px 0;
   font-size: 16px;
@@ -159,7 +158,7 @@ header .Navi li a:hover {
   resize: none;
 }
 
-.contactform .Inputbox span {
+.contactform .Inputlox span {
   position: absolute;
   left: 0;
   padding: 5px 0;
@@ -170,16 +169,16 @@ header .Navi li a:hover {
   color: #666;
 }
 
-.contactform .Inputbox input:focus ~ span,
-.contactform .Inputbox input:valid ~ span,
-.contactform .Inputbox textarea:focus ~ span,
-.contactform .Inputbox textarea:valid ~ span {
+.contactform .Inputlox input:focus ~ span,
+.contactform .Inputlox input:valid ~ span,
+.contactform .Inputlox textarea:focus ~ span,
+.contactform .Inputlox textarea:valid ~ span {
   color: #e91e63;
   font-size: 12px;
   transform: translateY(-20px);
 }
 
-.contactform .Inputbox input[type="submit"] {
+.contactform .Inputlox input[type="submit"] {
   width: 100px;
   background: yellow;
   color: #fff;
@@ -189,80 +188,11 @@ header .Navi li a:hover {
   font-size: 18px;
 }
 
-footer {
-  position: relative;
-  bottom: 0;
-}
-
-.footer-distributed {
-  background: #2d2a30;
-  box-sizing: border-box;
-  widows: 100%;
-  text-align: left;
-  font: bold 16px 'Poppins',sans-serif;
-  padding: 20px 20px 30px 20px;
-  margin-top: 80px;
-}
-
-.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.footer-distributed .footer-left {
-  width: 30%;
-}
-
-.footer-distributed .footer-center {
-  width: 35%;
-}
-
-.footer-distributed .footer-center i{
-  background-color: #33383b;
-  color: #ffff;
-  font-size: 25px;
-  width: 38px;
-  height: 38px;
-  text-align: center;
-  border-radius: 50%;
-  line-height: 42px;
-  margin: 10px 15px;
-  vertical-align: middle;
-}
-
-.footer-distributed .footer-center i.fa-envelope {
-  font-size: 17px;
-  line-height: 38px;
-}
-
-.footer-distributed .footer-center p{
-  display: inline-block;
-  color: #ffff;
-  vertical-align: middle;
-  margin: 0;
-}
-
-.footer-distributed .footer-right {
-  width: 30%;
-}
-
-.footer-distributed .footer-company-about {
-  line-height: 20px;
-  color: #92999f;
-  font-size: 13px;
-  font-weight: normal;
-  margin: 0;
-}
-
-.footer-distributed .footer-company-about span {
-  display: block;
-  color: #ffff;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
 @media (max-width:991px){
+
+  .container  {
+    max-width: 100%;
+  }
 
   header {
     padding: 20px;
@@ -278,12 +208,15 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #e51e2a;
+    background: #ffd93d;
     display: flex;
     z-index: 10;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 3em;
+    line-height: 1.5em;
+    font-variant: all-petite-caps;
   }
 
   section {
@@ -312,8 +245,6 @@ footer {
 
   }
 
-
-
   .contact {
     padding: 50px;
   }
@@ -328,23 +259,160 @@ footer {
     width: 100%;
   }
 
-  footer {
-    position: static;
-    display: flex;
-    margin-left: -15px;
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
   }
 
-  .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
-  }
+}
 
 
-  .footer-distributed .footer-left img {
-    width: 150px;
-    height: 150px;
-  }
+footer{
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+  color: white;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: #f12020;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+  color: white;
+}
+.center .content .fas:hover{
+  background: #f12020;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+  color: white;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+  color: white;
+}
 
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 200%;
+  border: none;
+  outline: none;
+  background: #576CBC;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #000;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
 }
