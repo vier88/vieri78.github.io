@@ -120,6 +120,7 @@ header .Navi li a:hover {
   flex: 0 0 auto;
   width: 400px;
   overflow: hidden;
+  margin-bottom:30px;
 }
 
 .mvv-contianer .mvv-block .image img {
@@ -325,7 +326,7 @@ header .Navi li a:hover {
   }
 
   .mvv-contianer .mvv-block .content .Visi {
-    padding-left: 30px;
+    padding-left: 40px;
     font-size: 18px;
     font-weight: 200;
   }
