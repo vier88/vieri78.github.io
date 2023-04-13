@@ -488,3 +488,7 @@ footer{
   opacity: 0;
   transform: translateY(-110px) rotateX(90deg);
 }
+
+.lox .back-face .pi {
+  margin-left: -15px;
+}
