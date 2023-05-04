@@ -56,7 +56,6 @@ header .Navi li a:hover {
 
 .Ourserv {
   width: 100%;
-
   padding:0 8%;
   padding-top: 80px;
 }
@@ -296,7 +295,6 @@ footer{
   background: #151515;
   padding-left: 10px;
   border: 1px solid #222222;
-  color: white;
 }
 .right form input:focus,
 .right form textarea:focus{
@@ -321,4 +319,19 @@ footer{
 }
 .right form .btn button:hover{
   background: #000;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
 }

@@ -403,7 +403,7 @@ footer{
   display: grid;
   margin: 100px 100px auto;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin-bottom: 100px;
 }
 
@@ -480,6 +480,11 @@ footer{
   margin-top: 10px;
   text-align: justify;
 }
+
+.lox .back-face .pi {
+  margin-left: -15px;
+}
+
 .lox:hover .back-face{
   opacity: 1;
   transform: rotateX(0deg);
@@ -487,8 +492,4 @@ footer{
 .lox:hover .front-face{
   opacity: 0;
   transform: translateY(-110px) rotateX(90deg);
-}
-
-.lox .back-face .pi {
-  margin-left: -15px;
 }

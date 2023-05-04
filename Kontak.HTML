@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krida</title>
+  <link rel="stylesheet" href="Kontak.css">
+  <script src="https://kit.fontawesome.com/457033bed9.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+
+</head>
+<body>
+  <section>
+    <header>
+      <ul class="Navi">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Profile.html">Profile</a></li>
+        <li><a href="Portofolio.html">Portofolio</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Kontak.html">Kontak</a></li>
+      </ul>
+      <div class="toggle" onclick="toggleMenu()"></div>
+    </header>
+    <section class="contact">
+
+      <div class="pembuka">
+        <h1>Contact Us</h1>
+        <p>Bila ada yang ingin ditanyakan, jangan ragu untuk bertanya kepada kami</p>
+      </div>
+      <div class="container">
+        <div class="contactInfo">
+          <div class="lox">
+            <div class = "icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="kalimat">
+              <h2>Alamat</h2>
+              <p>Bojong gede, buaran</p>
+            </div>
+          </div>
+          <div class="lox">
+            <div class = "icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="kalimat">
+              <h2>Telepon</h2>
+              <p>22222222222</p>
+            </div>
+          </div>
+          <div class="lox">
+            <div class = "icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="kalimat">
+              <h2>Email</h2>
+              <p>Adrian@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contactform">
+          <form>
+            <h3>Send Message</h3>
+            <div class="Inputlox">
+              <input type="text" name="" required="required">
+              <span>Full Name</span>
+            </div>
+            <div class="Inputlox">
+              <input type="text" name="" required="required">
+              <span>Email</span>
+            </div>
+            <div class="Inputlox">
+              <textarea required="required"></textarea>
+              <span>Type Your Message</span>
+            </div>
+            <div class="Inputlox">
+              <input type="submit" name="" value="Send">
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+  </section>
+
+  <script type="text/javascript">
+  function toggleMenu(){
+    const menuToggle = document.querySelector('.toggle');
+    const navigation = document.querySelector('.Navi')
+    menuToggle.classList.toggle('active')
+    navigation.classList.toggle('active')
+  }
+
+  </script>
+
+  <footer>
+    <div class="main-content">
+      <div class="left box">
+        <h2>About us</h2>
+        <div class="content">
+          <p>PT. Krida Indotama Teknologi adalah sebuah perusahaan software house yang menyediakan sistem digital yang komprehensif berbasis website dan aplikasi sesuai dengan kebutuhan client untuk dapat mempermudah dan memoderniasi pekerjaan.</p>
+
+        </div>
+      </div>
+
+      <div class="center box">
+        <h2>Address</h2>
+        <div class="content">
+          <div class="place">
+            <span class="fas fa-map-marker-alt"></span>
+            <span class="text">18 Office Park, Jakarta Selatan</span>
+          </div>
+          <div class="phone">
+            <span class="fas fa-phone-alt"></span>
+            <span class="text">(021) 50633500</span>
+          </div>
+          <div class="email">
+            <span class="fas fa-envelope"></span>
+            <span class="text">krida.technology@gmail.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="right box">
+        <h2>Contact us</h2>
+        <div class="content">
+          <form action="#">
+            <div class="email">
+              <div class="text">Email *</div>
+              <input type="email" required>
+            </div>
+            <div class="msg">
+              <div class="text">Message *</div>
+              <textarea rows="2" cols="25" required></textarea>
+            </div>
+            <div class="btn">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
